@@ -1,0 +1,20 @@
+// Overrides
+$base-spacing: 10px;
+$base-gutter: $base-spacing * 2;
+$base-leading: $base-spacing * 2;
+
+// Visual Variables
+$base-border-width: 1px;
+$base-border-style: solid;
+$base-border-color: $color--lighterGrey;
+$base-border: $base-border-width $base-border-style $base-border-color;
+$base-line-height: 1.2;
+$base-transition: 0.3s ease;
+$base-radius: 2px;
+
+// Breakpoints
+$xsmall: 360px;     // Small phone
+$small: 480px;      // Phone
+$medium: 768px;     // Tablet
+$large: 960px;     // Desktop
+$full: 1240px;      // Desktop full

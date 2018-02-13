@@ -1,0 +1,30 @@
+.more-on-bws {
+  &__large-tiles {
+    @include grid(2, 2, 1, 1, 2.5%, article, top);
+  }
+
+  &__small-tiles {
+    @include grid(3, 3, 1, 1, 2.5%, article, top);
+  }
+
+  &__image {
+    max-height: 160px;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-weight: $fw-semibold;
+  }
+
+  &__description {
+    color: $color--grey;
+    font-size: $font-size-small;
+    margin-bottom: 5px;
+  }
+
+  &__author {
+    color: $color--grey;
+    font-size: $font-size-small;
+    margin-top: 0;
+  }
+}

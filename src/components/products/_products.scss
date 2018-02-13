@@ -1,0 +1,44 @@
+.products {
+  &__list {
+    @include grid(3, 3, 2, 1, 2.5%, article, top);
+  }
+
+  &__item {
+  	text-align: center;
+  }
+
+  &__image {
+    height: 240px;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-small;
+    margin-bottom: $base-leading/4;
+  }
+
+  &__country {
+    font-size: $font-size-smaller;
+    margin-top: 0;
+  }
+
+  &__price {
+    font-family: $price-font;
+    color: $color--darkGrey;
+  }
+
+  &__recommended {
+    margin: 60px;
+    text-transform: uppercase;
+    font-size: $font-size-smaller;
+
+    span {
+      color: $color--grey;
+      font-size: $font-size-smaller;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@mixin leading-component ($size: 60) {
+  @if $size == 60 {
+    padding: $base-leading*3 0;
+
+    @include media($large down) {
+      padding: $base-leading*2 0;
+    }
+
+    @include media($medium down) {
+      padding: $base-leading*1.5 0;
+    }
+
+    @include media($small down) {
+      padding: $base-leading 0;
+    }
+  }
+
+  @if $size == 45 {
+    padding: $base-leading*2.25 0;
+
+    @include media($large down) {
+      padding: $base-leading*2 0;
+    }
+
+    @include media($medium down) {
+      padding: $base-leading*1.5 0;
+    }
+
+    @include media($small down) {
+      padding: $base-leading 0;
+    }
+  }
+
+  @if $size == 30 {
+    padding: $base-leading*1.5 0;
+
+    @include media($medium down) {
+      padding: $base-leading 0;
+    }
+  }
+}

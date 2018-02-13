@@ -1,0 +1,62 @@
+// General
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: auto;
+}
+
+body {
+  font-family: $main-font;
+  font-weight: $fw-regular;
+  font-size: 0;
+  color: $color--black;
+  line-height: $base-line-height;
+  background-color: $color--white;
+  font-style: normal;
+  margin: 0;
+  vertical-align: top;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-container {
+  position: relative;
+  display: block;
+  max-width: 1240px;
+  margin: auto;
+  min-height: 100vh;
+
+  @include media($full down) {
+    padding: 0 $base-gutter*1.5;
+  }
+
+  @include media($medium down) {
+    padding: 0 $base-gutter;
+  }
+}
+
+.page-main {
+  @include leading-component(30);
+}
+
+.page-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  @include media($full down) {
+    width: calc(100% - #{$base-gutter*1.5});
+    left: $base-gutter*0.75;
+  }
+
+  @include media($medium down) {
+    width: calc(100% - #{$base-gutter});
+    left: $base-gutter*0.5;
+  }
+}

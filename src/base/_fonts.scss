@@ -1,0 +1,63 @@
+// Bebas Neue Book
+@font-face {
+  font-family: 'BebasNeue';
+  font-weight: $fw-book;
+  font-style: normal;
+  src: url("../assets/bebas-neue/BebasNeue_Book.ttf") format("truetype");
+}
+
+// Playfair regular
+@font-face {
+  font-family: 'Playfair';
+  font-weight: $fw-regular;
+  font-style: normal;
+  src: url("../assets/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+// Playfair Bold
+@font-face {
+  font-family: 'Playfair';
+  font-weight: $fw-bold;
+  font-style: normal;
+  src: url("../assets/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+// Playfair italic
+@font-face {
+  font-family: 'Playfair';
+  font-weight: $fw-regular;
+  font-style: italic;
+  src: url("../assets/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
+}
+
+// Trueno Light
+@font-face {
+  font-family: 'Trueno';
+  font-weight: $fw-regular;
+  font-style: normal;
+  src: url("../assets/trueno/TruenoLt.otf") format("opentype");
+}
+
+// Trueno Semibold
+@font-face {
+  font-family: 'Trueno';
+  font-weight: $fw-semibold;
+  font-style: normal;
+  src: url("../assets/trueno/TruenoSBd.otf") format("opentype");
+}
+
+// Trueno Bold
+@font-face {
+  font-family: 'Trueno';
+  font-weight: $fw-bold;
+  font-style: normal;
+  src: url("../assets/trueno/TruenoBd.otf") format("opentype");
+}
+
+// Trueno Italic
+@font-face {
+  font-family: 'Trueno';
+  font-weight: $fw-regular;
+  font-style: italic;
+  src: url("../assets/trueno/TruenoLtIt.otf") format("opentype");
+}

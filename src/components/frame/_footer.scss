@@ -1,0 +1,93 @@
+.page-footer {
+  @include leading-component(45);
+  color: $color--white;
+  background-color: $color--black;
+
+  &::after,
+  &::before {
+    position: absolute;
+    height: 100%;
+    width: 2000px;
+    top: 0;
+    content: "";
+    background-color: $color--black;
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+  }
+
+  a {
+    color: $color--white;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .left-side,
+  .right-side {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .right-side {
+    text-align: right;
+  }
+
+  .footer-menu {
+    &__item {
+      display: inline-block;
+      text-transform: uppercase;
+      margin-left: $base-gutter;
+
+      a {
+        font-size: $font-size-small;
+      }
+    }
+  }
+
+  .footer-copyrights {
+    span {
+      font-weight: $fw-bold;
+    }
+  }
+
+  .footer-socials {
+    &__list {
+      margin-top: $base-leading*0.75;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: $base-gutter/2;
+
+      a {
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+
+        &.peleda {
+          background-image: svg-load('tripadvisor.svg', 'fill:' $color--white);
+        }
+
+        &.facebook {
+          background-image: svg-load('facebook.svg', 'fill:' $color--white);
+        }
+
+        &.linkedin {
+          background-image: svg-load('linked.svg', 'fill:' $color--white);
+        }
+      }
+    }
+  }
+}

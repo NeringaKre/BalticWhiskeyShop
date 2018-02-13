@@ -1,0 +1,129 @@
+.cart {
+  @include grid(2, 2, 1, 1, 5%, div, top);
+
+  &__field-wrapper {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: $font-size-small;
+    }
+
+    &.birth-date {
+      @include grid(3, 3, 1, 1, 2.5%, input, top);
+
+      input {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__checkboxes {
+  	margin-bottom: 30px;
+
+    &-title {
+      font-weight: $fw-semibold;
+      font-size: $font-size-small;
+    }
+  }
+
+  &__checkbox-wrapper {
+  	margin-bottom: 10px;
+
+  	> * {
+  	  vertical-align: middle;
+  	}
+
+    label {
+      font-size: $font-size-small;
+      margin-left: 20px;
+    }
+  }
+
+  &__actions {
+    text-align: right;
+
+    button {
+      appearance: none;
+      background-color: $color--primary;
+      border: 1px solid $color--darkGrey;
+      padding: 10px 20px;
+      font-weight: $fw-semibold;
+      font-size: $font-size-small;
+      text-transform: uppercase;
+    }
+  }
+
+  &__total {
+    background-color: $color--lighterGrey;
+    padding: 30px;
+    border: 1px solid $color--lightGrey;
+    text-align: right;
+
+    &-text {
+      font-size: $font-size-small;
+      margin-top: 0;
+    }
+
+    &-price {
+      font-size: $font-size-big;
+      font-family: $price-font;
+      margin: 0;
+      font-weight: $fw-semibold;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__product {
+    background-color: $color--lighterGrey;
+    padding: 30px;
+    border: 1px solid $color--lightGrey;
+    border-bottom: none;
+
+    > div {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &-image {
+      width: 25%;
+    }
+
+    &-information {
+      width: 45%;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &-quantity {
+      width: 30%;
+    }
+
+    &-country.cart__product-country {
+      font-size: $font-size-small;
+      color: $color--grey;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    &-price {
+      font-family: $price-font;
+      font-weight: $fw-semibold;
+      letter-spacing: 1px;
+    }
+
+    &-image {
+      max-height: 80px;
+
+      img {
+        display: block;
+        margin: auto;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}

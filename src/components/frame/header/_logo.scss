@@ -1,0 +1,21 @@
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 5px;
+
+  &__text {
+  	margin: 0;
+    font-size: 1.7rem;
+    font-family: $heading-font;
+    font-weight: $fw-bold;
+
+    @include media($full down) {
+      font-size: 1.3rem;
+    }
+
+    @include media($small down) {
+      font-size: 1rem;
+      width: 45px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.font {
+  &-bebas {
+    font-family: $price-font;
+  }
+
+  &-playfair {
+    &-regular {
+      font-family: $heading-font;
+      font-weight: $fw-regular;
+    }
+
+    &-bold {
+      font-family: $heading-font;
+      font-weight: $fw-bold;
+    }
+
+    &-italic {
+      font-family: $heading-font;
+      font-style: italic;
+      font-weight: $fw-regular;
+    }
+  }
+
+  &-trueno {
+    &-light {
+      font-family: $main-font;
+      font-weight: $fw-regular;
+    }
+
+    &-semibold {
+      font-family: $main-font;
+      font-weight: $fw-semibold;
+    }
+
+    &-bold {
+      font-family: $main-font;
+      font-weight: $fw-bold;
+    }
+
+    &-italic {
+      font-family: $main-font;
+      font-weight: $fw-regular;
+      font-style: italic;
+    }
+  }
+}

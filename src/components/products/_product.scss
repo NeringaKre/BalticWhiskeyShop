@@ -1,0 +1,119 @@
+.product-page {
+  &__product-title {
+    margin-bottom: 25px;
+  }
+
+  &__image-gallery {
+    display: inline-block;
+    vertical-align: top;
+    width: 38%;
+    margin-right: 4%;
+    max-height: 480px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      margin: auto;
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__information {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+  }
+
+  &__price-block {
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid $color--lightGrey;
+    border-bottom: 1px solid $color--lightGrey;
+
+    > div {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    &--right {
+      text-align: right;
+
+      button {
+        appearance: none;
+        padding: 10px 20px;
+        padding-right: 40px;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid $color--darkGrey;
+        font-weight: $fw-semibold;
+        background-image: svg-load('cart.svg', 'fill:' $color--darkGrey);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: top 6px right 5px;
+      }
+    }
+
+    &--left {
+      p {
+        margin: 0;
+        font-size: $h2-size;
+      }
+    }
+  }
+
+  &__size,
+  &__type,
+  &__country {
+    color: $color--darkGrey;
+    margin: 8px 0;
+
+    span {
+      color: $color--black;
+      font-weight: $fw-semibold;
+    }
+  }
+
+  &__body {
+    color: $color--darkGrey;
+    line-height: 1.7;
+  }
+
+  &__description {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: $fw-semibold;
+  }
+}
+
+.try-also {
+  &__title {
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    padding: $base-leading $base-gutter;
+    padding-left: 0;
+    background-color: $color--white;
+    z-index: 1;
+    font-weight: 400;
+    font-size: $h1-size;
+
+    span {
+      display: block;
+      font-style: italic;
+      font-size: $h2-size;
+    }
+  }
+
+  .products {
+    position: relative;
+    top: -35px;
+    border: 4px solid $color--primary;
+    @include grid(4, 2, 2, 1, 2.5%, article, top);
+
+    article {
+      margin-top: 2.5%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.gifts-block {
+  @include leading-component(60);
+  @include grid(2, 2, 1, 1, 0%, div, top);
+
+  &__image {
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      color: $color--white;
+      font-size: $h1-size;
+      font-family: $heading-font;
+      font-weight: $fw-bold;
+      margin: 0;
+      padding: 90px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color--black;
+      opacity: 0.4;
+      content: "";
+    }
+  }
+
+  &__description {
+    padding: 90px;
+
+    p {
+      color: $color--grey;
+      margin-bottom: 25px;
+    }
+
+    a {
+      display: inline-block;
+      min-width: 240px;
+      text-align: center;
+      padding: 14px;
+      border: 2px solid $color--primary;
+      font-family: $heading-font;
+      font-size: $h5-size;
+      font-weight: $fw-semibold;
+    }
+  }
+}

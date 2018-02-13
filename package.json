@@ -1,0 +1,46 @@
+{
+  "name": "npm-scaffold",
+  "version": "1.0.0",
+  "description": "way of handling css/js processing through npm only",
+  "main": "src/core/main.scss",
+  "scripts": {
+    "build": "webpack --colors --progress",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "watch": "webpack --colors --watch",
+    "install:styleguide": "npm install sc5-styleguide@^1.5.0",
+    "build:styleguide": "styleguide --kss-source 'src/*.scss' --kss-source 'src/*/*.scss' --kss-source 'src/*/*/*.scss' --style-source 'dist/*.css' --overviewPath 'README.md' --output styleguide --watch --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaptdk/npm_scaffold.git"
+  },
+  "keywords": [
+    "devtool"
+  ],
+  "author": "adapt",
+  "devDependencies": {
+    "autoprefixer": "6.5.3",
+    "css-loader": "0.25.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "^0.9.0",
+    "node-bourbon": "4.2.8",
+    "node-neat": "1.7.2",
+    "node-sass": "3.12.5",
+    "normalize.css": "5.0.0",
+    "postcss-calc": "5.3.1",
+    "postcss-inline-svg": "2.2.0",
+    "postcss-loader": "1.1.1",
+    "sass-loader": "4.0.2",
+    "style-loader": "0.13.1",
+    "stylelint": "7.5.0",
+    "stylelint-config-standard": "14.0.0",
+    "stylelint-webpack-plugin": "0.4.0",
+    "webpack": "1.13.3",
+    "font-awesome": "4.7.0"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adaptdk/npm_scaffold/issues"
+  },
+  "homepage": "https://github.com/adaptdk/npm_scaffold#readme"
+}

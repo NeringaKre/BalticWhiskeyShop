@@ -1,0 +1,39 @@
+// Settings & Base code
+@import "../base/settings-color";
+@import "../base/settings-layout";
+@import "../base/settings-typography";
+@import "../base/typography";
+@import "../base/fonts";
+
+// Mixins
+@import "../mixins/mixins";
+
+// Layout
+@import "../layout/layout";
+
+// Components
+@import "../components/components";
+@import "../components/frame/footer";
+@import "../components/frame/header/header";
+@import "../components/frame/header/logo";
+@import "../components/frame/header/header-menu";
+@import "../components/frame/header/header-secondary-menu";
+@import "../components/frame/header/header-search";
+@import "../components/frame/header/mini-cart";
+@import "../components/frame/header/language-switcher";
+@import "../components/image-w-news/image-w-news";
+@import "../components/products/products";
+@import "../components/products/product";
+@import "../components/blocks/gifts-block";
+@import "../components/blocks/checkout-steps";
+@import "../components/blocks/more-on-bws";
+@import "../components/cart/cart";
+@import "../components/category/category";
+
+// Utilities
+@import "../utilities/utilities";
+
+//
+@import "../base/default";
+
+
